@@ -1,10 +1,8 @@
-# Microsite Component Boilerplate
-
-####This is a starting point for microsite components (as jQuery plugins)
+# Component Boilerplate
 
 ___
 
-Will create a new plugin based on micrositeComponentBoilerplate repo:
+Create a new plugin based on componentBoilerplate repo:
 
 ```
 $ ./bootstrap pluginName 'description of the plugin'
