@@ -1,9 +1,3 @@
 # Component Boilerplate
 
-___
-
-Create a new plugin based on componentBoilerplate repo:
-
-```
-$ ./bootstrap pluginName 'description of the plugin'
-```
+see: [component boilerplate bootstrap](https://gist.github.com/okize/5423344)
