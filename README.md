@@ -1,3 +1,3 @@
-# jquery-plugin-generator
+# jquery-plugin-umd-boilerplate
 
-generates a UMD boilerplate for creating jQuery plugins
+A UMD boilerplate for creating jQuery plugins

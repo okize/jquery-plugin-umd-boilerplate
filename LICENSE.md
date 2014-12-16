@@ -1,4 +1,4 @@
-# jquery-plugin-generator
+# jquery-plugin-umd-boilerplate
 
 ### Available for use under the [MIT License](http://www.opensource.org/licenses/MIT)
 
