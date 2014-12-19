@@ -1,16 +1,46 @@
 {
-  "name": "jquery-plugin-generator",
+  "name": "jquery-plugin-umd-boilerplate",
   "private": true,
-  "description": "generates a UMD boilerplate for creating jQuery plugins",
-  "version": "0.0.1",
+  "description": "A UMD boilerplate for creating jQuery plugins",
+  "version": "1.0.0",
   "author": "Morgan Wigmanich <okize123@gmail.com> (http://github.com/okize)",
+  "devDependencies": {
+    "browserify": "^7.0.1",
+    "gulp": "^3.8.10",
+    "gulp-connect": "^2.2.0",
+    "gulp-util": "^3.0.1",
+    "jquery": "^2.1.1",
+    "requirejs": "^2.1.15",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okize/jquery-plugin-umd-boilerplate.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "umd",
+    "amd",
+    "browserify",
+    "boilerplate"
+  ],
+  "homepage": "https://github.com/okize/jquery-plugin-umd-boilerplate",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/okize/jquery-plugin-generator/blob/master/license.md"
+      "url": "https://github.com/okize/jquery-plugin-umd-boilerplate/blob/master/LICENSE.md"
     }
   ],
-  "devDependencies": {
-    "gulp": "*"
+  "bugs": {
+    "url": "https://github.com/okize/jquery-plugin-umd-boilerplate/issues"
   }
 }
