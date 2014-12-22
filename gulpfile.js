@@ -1,15 +1,21 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var connect = require('gulp-connect');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
+var port = 1111;
+
 gulp.task('server', function () {
   connect.server({
     root: ['example', 'src', 'assets', 'node_modules'],
-    port: 1111,
+    port: port,
     livereload: true
   });
-  console.log('Examples can be seen at http://localhost:1111')
+  gutil.log(
+    gutil.colors.red('Examples can be viewed at'),
+    gutil.colors.blue('http://localhost:' + port)
+  );
 });
 
 gulp.task('html', function () {
