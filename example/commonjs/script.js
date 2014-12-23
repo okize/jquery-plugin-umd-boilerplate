@@ -9204,6 +9204,9 @@ Copyright (c) 2013 | Licensed under the MIT license
 http://www.opensource.org/licenses/mit-license.php
 */
 (function(factory) {
+
+  'use strict';
+
   if (typeof define === 'function' && define.amd) {
     define(['jquery'], factory); // AMD
   } else if (typeof exports === 'object') {
@@ -9211,6 +9214,7 @@ http://www.opensource.org/licenses/mit-license.php
   } else {
     factory(jQuery); // Browser globals
   }
+
 })(function($) {
 
   'use strict';
@@ -9221,7 +9225,7 @@ http://www.opensource.org/licenses/mit-license.php
     property: true
   };
 
-  var Plugin = (function() {
+  var Pluginify = (function() {
     function Plugin(element, options) {
       this.element = element;
       this.options = $.extend({}, defaults, options);
@@ -9242,7 +9246,7 @@ http://www.opensource.org/licenses/mit-license.php
   $.fn[pluginName] = function (options) {
     this.each(function() {
       if (!$.data(this, pluginName)) {
-        $.data(this, pluginName, new Plugin(this, options));
+        $.data(this, pluginName, new Pluginify(this, options));
       }
     });
     return this;

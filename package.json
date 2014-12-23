@@ -8,6 +8,7 @@
     "browserify": "^7.0.1",
     "gulp": "^3.8.10",
     "gulp-connect": "^2.2.0",
+    "gulp-eslint": "^0.2.0",
     "gulp-util": "^3.0.1",
     "jquery": "^2.1.1",
     "requirejs": "^2.1.15",
